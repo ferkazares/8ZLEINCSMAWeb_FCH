@@ -40,3 +40,13 @@ function validar(formulario){
 
 
 }
+
+function validateCredentials(username, password) {
+    const validUsername = "Fernanda";
+    const validPassword = "123";
+  
+    if (username === validUsername && password === validPassword) {
+      return true;
+    }
+    return false;
+  }
