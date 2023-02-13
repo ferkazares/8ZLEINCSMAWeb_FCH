@@ -7,14 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios JS</title>
     <link rel="stylesheet" href="css/styleejerciciosjs.css">
-    <a href="problema2.html">Ir a problema 2</a>
 </head>
 
 <body>
-    <br>
     <div class="container">
-        <h3>Problema 1</h3>
         <form method="get" name="formulario" action="">
+            <h3>Problema 1</h3>
             <label> Formulario para el calculo de inversion de
                 capital al 2% mensual </label>
             <div class="table-content">
@@ -37,21 +35,114 @@
                         <td>
                             <input type="text" readonly="readonly" class="input_text" name="sueldoI" id="cantidadI">
                         </td>
+                    </tr>
 
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <input type="button" value="Borrar Datos" name="borrar" onclick="borrardatos()">
-                        </td>
-                    </tr>
                 </table>
+                <!- XDDD NO DEJA BUSCOAQUI FERKA SE ESTA HACIENDO ESA PARTE. JALE TODO EL TABLE->
+                    <table>
+                        <br>
+                        <h3>Problema 2: Sueldo mas comisión </h3>
+                        <tr>
+                            <td>Introduce el saldo base: </td>
+                            <td>
+                                <input type="text" name="saldo" onkeypress="return validarn(event)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>¿Cuantas ventas realizó?: </td>
+                            <td>
+                                <input type="text" name="venta" onkeypress="return validarn(event)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="button" value="Calcular total" name="enviar" onclick="comision()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Su sueldo base mas comision es de:</td>
+                            <td>
+                                <input type="text" readonly="readonly" class="input_text" name="totI" id="totalI">
+                            </td>
+                    </table>
+                    <table>
+                        <tr>
+                            <br>
+                            <h3>Problema 3: Descuento total de la compra</h3>
+                            <td>Introduce el total de la compra: </td>
+                            <td>
+                                <input type="text" name="compra" onkeypress="return validarn(event)">
+                            </td>
+                        </tr>
 
+                        <tr>
+                            <td>Su total de la compra con el 15% de descuento: </td>
+                            <td>
+                                <input type="text" readonly="readonly" class="input_text" name="totC" id="totii">
+                            </td>
+        
+                        </tr>
+                    </table>
+
+                    <table>
+                        <br>
+                        <h3>Problema 4 : Calificación final</h3>
+                        <tr>
+                            <td>Ingrese su calificación 1: </td>
+                            <td>
+                                <input type="text" name="calif1" onkeypress="return validarn(event)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ingrese su calificación 2: </td>
+                            <td>
+                                <input type="text" name="calif2" onkeypress="return validarn(event)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ingrese su calificación 3: </td>
+                            <td>
+                                <input type="text" name="calif3" onkeypress="return validarn(event)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ingrese calif de exámen final: </td>
+                            <td>
+                                <input type="text" name="Efinal" onkeypress="return validarn(event)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ingrese la calif de el trabajo final</td>
+                            <td>
+                                <input type="text" name="Tfinal" onkeypress="return validarn(event)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="button" value="Promedio final" name="enviar" onclick="califFinal()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Su calificación final es:</td>
+                            <td>
+                                <input type="text" readonly="readonly" class="input_text" name="Califs" id="PromTot">
+                            </td>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="button" value="Borrar Datos" name="borrar" onclick="borrardatos()">
+                            </td>
+                        </tr>
+                    </table>
+
+                    
             </div>
         </form>
 
     </div>
-    
+
     <br>
     <script src="JS/interes.js"></script>
 </body>
